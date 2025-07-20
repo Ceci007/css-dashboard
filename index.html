@@ -9,23 +9,28 @@
 </head>
 <body>
   <div> 
-    <nav>
+    <nav class="navbar">
       <div class="nav-left">
         <div class="logo-container">
-          <img src="./images/logo.png" alt="logo" width="129px" height="27px" />
+          <img src="./images/logo.png" alt="logo" />
         </div>
         <div class="search-container">
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars icon-size"></i>
           <div class="form-control">
-            <input type="text" />
+            <input type="text" placeholder="Search..." />
+            <i class="fa-solid fa-magnifying-glass icon-size"></i>
           </div>
         </div>
       </div>
       <div class="nav-right">
-        <i class="fa-solid fa-bell"></i>
+        <div class="bell">
+          <i class="fa-solid fa-bell bell-size"></i>
+          <span class="red-dot">3</span>
+        </div>
         <div class="language">
           <img src="./images/Flag.png" alt="Flag" width="40px" height="27px" />
           <h2>English</h2>
+          <i class="fa-solid fa-chevron-down"></i>
         </div>
         <div class="username-container">
           <img src="./images/user-1.jpg" alt="username" width="44px" height="44px" />
