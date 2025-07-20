@@ -6,6 +6,7 @@
   --color-white-bluewish-background: #F5F6FA;
   --color-input-border: #D5D5D5;
   --color-placeholder-grey: #9C9C9C;
+  --color-primary: #4880FF;
 }
 
 * {
@@ -90,6 +91,7 @@ input[type="text"] {
   border-radius: 3.6rem;
   padding: 1rem 2rem;
   padding-left: 5rem;
+  color: var(--color-grey-dark-medium);
 }
 
 .form-control i {
@@ -116,7 +118,7 @@ input[type="text"]::placeholder {
 
 .bell-size {
   font-size: 2.6rem;
-  color: var(--color-grey-dark-medium);
+  color: var(--color-primary);
 }
 
 .red-dot {
@@ -174,4 +176,8 @@ input[type="text"]::placeholder {
 .user-role span {
   font-size: 1.2rem;
   color: var(--color-grey-dark-medium);
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
