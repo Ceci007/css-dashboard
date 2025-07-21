@@ -35,7 +35,6 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: var(--color-grey-dark-medium);
-  background: var(--color-white-bluewish-background);
 }
 
 /* ------------- Navigation ------------- */
@@ -43,11 +42,15 @@ body {
   height: 6rem;
   width: 100%;
   position: fixed;
-  background-color: #fff;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 80;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 3rem 8rem;
+  box-shadow: rgba(245, 246, 250, 0.6) 0px 8px 24px;
 }
 
 .nav-left {
@@ -180,4 +183,92 @@ input[type="text"]::placeholder {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+/* ------------ Sidebar ------------ */
+.main-container {
+  background: var(--color-white-bluewish-background);
+  min-height: calc(100vh);
+  height: auto;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  width: 250px;
+  min-height: 100vh;
+}
+
+.sidebar-list {
+  margin-top: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.sidebar-list li {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  justify-self: flex-start;
+  margin: 0 auto;
+  position: relative;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  width: 180px;
+  padding: 1rem 2rem;
+  gap: 2rem;
+  color: var(--color-grey-dark-medium);
+  font-size: 1.2rem;
+}
+
+.sidebar-item-active {
+  background: var(--color-primary);
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+}
+
+.sidebar-icon-active {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.sidebar-item i {
+  color: var(--color-grey-dark-medium);
+}
+
+.sidebar-span-active::before {
+  content: "";
+  width: 4px;
+  height: 40px;
+  background: var(--color-primary);
+  position: absolute;
+  top: 0;
+  left: -30px;
+  border-radius: 6px;
+}
+
+.menu-line-break {
+  margin: 2rem 0;
+  width: 100%;
+  height: 1px;
+  background: var(--color-input-border);
+  border: none;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-transform: uppercase;
+  padding-left: 5.5rem;
+  color: var(--color-placeholder-grey);
+}
+
+.re-margin {
+  margin-top: 0;
 }
