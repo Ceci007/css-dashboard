@@ -349,6 +349,22 @@ input[type="text"]::placeholder {
   color: var(--color-grey-dark-medium);
 }
 
+/* ------------ Chart ------------ */
+.chart {
+  padding: 2rem;
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: rgba(245, 246, 250, 0.6) 0px 8px 24px;
+  width: 100%;
+  margin-top: 3rem;
+  height: 43rem;
+}
+
+.chart h2 {
+  font-size: 2.4rem;
+  color: var(--color-grey-dark-intense);
+}
+
 /* ------------ Mediaqueries ------------ */
 
 @media only screen and (max-width: 68.75em) {
