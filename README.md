@@ -17,7 +17,7 @@
 
 ## 🔴 Live Demo
 
-[Demo Link](https://dancing-lebkuchen-c9dc82.netlify.app/)
+[Demo Link](https://charming-semolina-ae3b8c.netlify.app/)
 
 
 ## 🛠 Getting Started
